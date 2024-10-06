@@ -1,0 +1,30 @@
+.wrapper {
+    position: absolute;
+    width: 300px;
+    height: fit-content;
+    top: 3%;
+    left: 14%;
+    background-color: #000;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #1c1c21;
+    border-radius: 10px;
+    padding: 16px 24px;
+    margin-bottom: 20px;
+}
+
+.navigation {
+    margin-bottom: 20px;
+}

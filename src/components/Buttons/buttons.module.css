@@ -1,0 +1,46 @@
+.btnBox {
+    border: 1px solid #1c1c21;
+    border-radius: 100px;
+    background: #070708;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.btnBox button {
+    position: relative;
+    border-radius: 100px;
+    padding: 14px;
+    background: #1c1c21;
+}
+
+.btn__left:before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/left.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    top: 2px;
+    left: 2px;
+}
+
+.btn__right:before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    top: 2px;
+    left: 2px;
+}
+
+@media(max-width: 520px) {
+    .btnBox {
+        padding: 4px;
+        gap: 5px;
+    }
+}

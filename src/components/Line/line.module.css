@@ -1,0 +1,76 @@
+.list {
+    display: inline-flex;
+    justify-content: flex-start;
+    gap: 70px;
+    background-color: #0e0e10;
+    padding: 20px;
+    animation: animation 10s linear infinite;
+}
+
+.item {
+    position: relative;
+    padding: 6px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #d6d0fb;
+}
+
+.item:before {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    content: "";
+    background-image: url("../../img/Icon.svg");
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+}
+
+.animation {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    background: #0e0e10;
+}
+
+@keyframes animation {
+    0% {
+        transform: translateX(0); /* Начальная позиция */
+    }
+    100% {
+        transform: translateX(-50%); /* Конечная позиция */
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .item:before {
+        position: absolute;
+        top: -2px;
+        left: -27px;
+        background-image: url(../../img/group_hero.svg);
+        height: 30px;
+        width: 30px;
+    }
+
+    .list {
+        gap: 50px;
+        padding: 10px;
+    }
+
+    .item {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 820px) {
+    .list {
+        gap: 10px;
+    }
+
+    .item {
+        font-size: 6px;
+    }
+}
